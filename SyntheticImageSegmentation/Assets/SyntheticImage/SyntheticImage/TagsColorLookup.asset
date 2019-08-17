@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a13033ec2949af247acb887af1ac7d04, type: 3}
+  m_Name: TagsColorLookup
+  m_EditorClassIdentifier: 
+  TagColorList:
+  - Tag: Tree
+    Color: {r: 0.49019608, g: 0, b: 0, a: 0}
+  - Tag: Static-Obstacle
+    Color: {r: 0.49019608, g: 0.21183385, b: 0, a: 0}
+  - Tag: Barrier
+    Color: {r: 0.49019608, g: 0.21183385, b: 0, a: 0}
+  - Tag: Static-Useful
+    Color: {r: 0, g: 0.727653, b: 1, a: 0}
+  - Tag: Road
+    Color: {r: 0.18344511, g: 0.90588236, b: 0.031372543, a: 0}
+  - Tag: LaneMarking
+    Color: {r: 0.90588236, g: 0.75691694, b: 0.031372543, a: 0}
