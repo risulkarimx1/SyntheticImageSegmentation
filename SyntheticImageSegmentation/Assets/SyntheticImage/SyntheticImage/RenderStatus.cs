@@ -3,12 +3,12 @@ using UnityEngine.Serialization;
 
 public class RenderStatus : MonoBehaviour
 {
-	private VisibleObjectListMaker _visibleObjectListMaker;
+	private ObjectListMaker _visibleObjectListMaker;
 	private MeshFilter _meshFilter;
 
 	[SerializeField] private bool _isVisible;
 
-	public void SetVisibleRendererList(VisibleObjectListMaker visibleObjectListMaker)
+	public void SetVisibleRendererList(ObjectListMaker visibleObjectListMaker)
 	{
 		_visibleObjectListMaker = visibleObjectListMaker;
 		_meshFilter = GetComponent<MeshFilter>();

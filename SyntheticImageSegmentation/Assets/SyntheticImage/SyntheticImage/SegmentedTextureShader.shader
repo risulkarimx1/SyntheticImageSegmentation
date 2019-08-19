@@ -12,7 +12,10 @@
 
         Pass
         {
-			Cull Off ZWrite Off  ZClip Off 
+			Cull Off 
+			ZWrite Off  
+			ZClip Off 
+			
 			//Blend One OneMinusSrcAlpha
 
             CGPROGRAM

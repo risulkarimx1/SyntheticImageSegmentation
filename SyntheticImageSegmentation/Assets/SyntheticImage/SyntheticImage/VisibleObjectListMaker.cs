@@ -38,15 +38,15 @@ public class VisibleObjectListMaker : MonoBehaviour
 		//}
 
 
-		foreach (var segmentedObject in SegmentedObjectParents)
-		{
-			var renderers = segmentedObject.GetComponentsInChildren<Renderer>();
-			foreach (var renderer in renderers)
-			{
-				var renderStatus = renderer.gameObject.AddComponent<RenderStatus>();
-				renderStatus.SetVisibleRendererList(this);
-			}
-		}
+		//foreach (var segmentedObject in SegmentedObjectParents)
+		//{
+		//	var renderers = segmentedObject.GetComponentsInChildren<Renderer>();
+		//	foreach (var renderer in renderers)
+		//	{
+		//		var renderStatus = renderer.gameObject.AddComponent<RenderStatus>();
+		//		renderStatus.SetVisibleRendererList(this);
+		//	}
+		//}
 
 		_objectIdR = Shader.PropertyToID("_ObjectIdR");
 		Shader.PropertyToID(nameof(VisibleObjectListMaker));
@@ -57,9 +57,9 @@ public class VisibleObjectListMaker : MonoBehaviour
 	{
 		_fullScreenQuad = GetComponent<FullScreenQuad>();
 
-		_tagColorTexture = _tagsColorsLookup.GetTexture();
+		//_tagColorTexture = _tagsColorsLookup.GetTexture();
 		_segmentedOutputMaterial.SetFloat("_NumberOfSegments", _tagsColorsLookup.TagColorList.Count);
-		_segmentedOutputMaterial.SetTexture("_TagLookUp", _tagColorTexture);
+		//_segmentedOutputMaterial.SetTexture("_TagLookUp", _tagColorTexture);
 		_fullScreenQuad.OutputMaterial = _segmentedOutputMaterial;
 
 		//StartCoroutine(ProcessVisibleObjects());
